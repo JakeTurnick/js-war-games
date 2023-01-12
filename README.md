@@ -16,3 +16,15 @@ REQUIREMENTS
 You must have a constructor for Game, Player, Deck, and Card
 You must attach methods to the prototype chain
 You must create a basic UI that includes a draw button and message box that informs the game status after each draw (e.g. What cards were drawn? Which player won the hand? How many cards does each player have?)
+
+
+
+// My working notes
+
+JS structure -
+    Game.js { //main function of the game - dealing to players, comparing played cards, war function, shuffling draw
+        player.js //stores name, set name method, (constructor new player),
+        deck.js { //creates deck with card constructor
+            card.js //card constructor
+        }
+    }
