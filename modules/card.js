@@ -1,8 +1,8 @@
 
-function makeCard(suit, num) {
+function Card(suit, num) {
     this.suit = suit;
     this.rank = num;
 }
-console.log('test', new makeCard('spades', 9))
+console.log('test', new Card('spades', 9))
 
-export {makeCard};
+export {Card};

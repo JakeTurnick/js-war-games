@@ -1,8 +1,10 @@
 // import game from './modules/game.js';
-import { buildDeck, Deck, shuffle } from './modules/deck.js';
+import { Deck } from './modules/deck.js';
 
 let test = new Deck;
-console.log('this one', test);
-let shuffleTest = shuffle(test);
+test.buildDeck();
+console.log('new Deck test', test);
+let shuffleTest = test.shuffle();
 console.log(test.deck.length);
-// console.log(shuffleTest)
+console.log('shuffle Deck test', shuffleTest)
+console.log(test)
