@@ -21,6 +21,9 @@ You must create a basic UI that includes a draw button and message box that info
 
 // My working notes
 
+// 1 - 12: Created Card & Deck with .buildDeck & .shuffle
+    // need to create players & deal out a hand
+
 JS structure -
     Game.js { //main function of the game - dealing to players, comparing played cards, war function, shuffling draw
         player.js //stores name, set name method, (constructor new player),

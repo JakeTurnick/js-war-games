@@ -69,30 +69,4 @@ Deck.prototype.buildDeck = function buildDeck() {
     return deckArr;
 }
 
-
-//make proto method
-
-
-// function shuffle(deck) {
-//     //using deck.length so you can use fresh deck or discard pile as deck
-//     //may need to use deck.deck to grab array
-//     let cards = deck.deck; //deck is object containing the array: .deck
-//     let shuffled = [];
-//     console.log('deck', cards.length)
-//     for (let i = 0; i < cards.length; i++) {
-//         let newCard = cards[Math.floor(Math.random() * 52)];
-//         // console.log('new card', newCard)
-//         while (shuffled.includes(newCard)) {
-//             newCard = cards[Math.floor(Math.random() * 52)];
-//         }
-//         shuffled.push(newCard);
-//     }
-//     console.log('shuffled deck', shuffled)
-//     return shuffled
-// };
-
-
-
-// console.log(buildDeck())
-
 export { Deck}
