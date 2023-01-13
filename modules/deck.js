@@ -4,24 +4,42 @@ import { Card } from "./card.js";
 function Deck() {
     this.deck = this.buildDeck();
 }
+        //unsure if I need these shuffle functions in here or if they should be moved to game.js3
+            // Deck.prototype.shuffle = function shuffle() {
+            //     //using deck.length so you can use fresh deck or discard pile as deck
+            //     //may need to use deck.deck to grab array
+            //     let cards = this.deck; //deck is object containing the array: .deck
+            //     let shuffled = [];
+            //     // console.log('deck', cards.length)
+            //     for (let i = 0; i < cards.length; i++) {
+            //         let newCard = cards[Math.floor(Math.random() * 52)];
+            //         // console.log('new card', newCard)
+            //         while (shuffled.includes(newCard)) {
+            //             newCard = cards[Math.floor(Math.random() * 52)];
+            //         }
+            //         shuffled.push(newCard);
+            //     }
+            //     // console.log('shuffled deck', shuffled)
+            //     return shuffled
+            // };
 
-Deck.prototype.shuffle = function shuffle(deck) {
-    //using deck.length so you can use fresh deck or discard pile as deck
-    //may need to use deck.deck to grab array
-    let cards = this.deck; //deck is object containing the array: .deck
-    let shuffled = [];
-    // console.log('deck', cards.length)
-    for (let i = 0; i < cards.length; i++) {
-        let newCard = cards[Math.floor(Math.random() * 52)];
-        // console.log('new card', newCard)
-        while (shuffled.includes(newCard)) {
-            newCard = cards[Math.floor(Math.random() * 52)];
-        }
-        shuffled.push(newCard);
-    }
-    // console.log('shuffled deck', shuffled)
-    return shuffled
-};
+            // Deck.prototype.reShuffle = function shuffle() {
+            //     //using deck.length so you can use fresh deck or discard pile as deck
+            //     //may need to use deck.deck to grab array
+            //     let cards = this.deck; //deck is object containing the array: .deck
+            //     let shuffled = [];
+            //     // console.log('deck', cards.length)
+            //     for (let i = 0; i < cards.length; i++) {
+            //         let newCard = cards[Math.floor(Math.random() * 52)];
+            //         // console.log('new card', newCard)
+            //         while (shuffled.includes(newCard)) {
+            //             newCard = cards[Math.floor(Math.random() * 52)];
+            //         }
+            //         shuffled.push(newCard);
+            //     }
+            //     // console.log('re-shuffled deck', shuffled)
+            //     return shuffled
+            // };
 
 Deck.prototype.buildDeck = function buildDeck() {
     const deck = {};
@@ -69,4 +87,4 @@ Deck.prototype.buildDeck = function buildDeck() {
     return deckArr;
 }
 
-export { Deck}
+export { Deck }

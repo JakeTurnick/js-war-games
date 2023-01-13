@@ -8,12 +8,6 @@ function Player(hand = [], setScore = 0) {
     //setScore - victory count, how many games won in a set
 }
 
-//Hard-Coded players to start
 
-const player1 = {
-    hand : [],
-    scorePile: [],
-
-}
 
 export {Player};
