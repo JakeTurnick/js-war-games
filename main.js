@@ -16,10 +16,11 @@ console.log("new game", newGame)
 // console.log('Deal', newGame.deal())
 // console.log('\nShuffled:', newGame.playDeck.shuffle(), '\nRe shuffled', newGame.playDeck.reShuffle())
 newGame.shuffleDeck();
-console.log('what I want',newGame.playDeck.deck) // currently undefined
+// console.log('what I want',newGame.playDeck.deck) // currently undefined
 newGame.deal();
-console.log('\nPost Deal', newGame)
+// console.log('\nPost Deal', newGame)
 newGame.play();
-for (let i = 0; i < 26; i++) {
+for (let i = 0; i < 100; i++) {
     newGame.play();
 }
+newGame.scoreShuffle();

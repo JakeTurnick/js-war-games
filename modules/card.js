@@ -6,4 +6,4 @@ function Card(suit, num) {
 // console.log('test', new Card('spades', 9))
 // ^^ logs card object {suit: 'spades', rank: 9}
 
-export { Card };
+export default Card;
