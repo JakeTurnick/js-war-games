@@ -11,16 +11,40 @@
     <h1>War Games</h1>
     <h3>Check the console!</h3>
     <main>
-        <textarea id="info-display"></textarea>
-        <!-- Shows winner -->
+        
         <div class="play-space">
+            <h3 id="info-display">Cards played:</h3>
+            
+            <h5 id="round-info"></h5>
             <!-- p1 cards
                 cards to compare
                 p2 cards -->
+            <div class="card-space">
+                <div class="p1">
+                    <div class="card p1">
+                        <span class="rank p1">Number</span>
+                        <img class="suit p1" src="" alt="">
+                    </div>
+                    <h3 class="hand p1"></h3>
+                </div>
+                <div class="p2">
+                    <div class="card p2">
+                        <span class="rank p2">Number</span>
+                        <img class="suit p2" src="" alt="">
+                    </div>
+                    <h3 class="hand p2"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="btn-holder">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="draw">Draw</button>
+            <button class="btn" id="restart">Restart</button>
         </div>
     </main>
-    <button id="Start">Start</button>
-    <button id="Restart">Restart</button>
+    <!-- make card for p1 & p2, use JS to change content & suit source -->
+    
+    
     <script src="main.js" type="module"></script>
 </body>
 </html>
