@@ -107,4 +107,8 @@ button {
 .hand {
     text-align: center;
 }
+.score {
+    text-align: center;
+    color: red;
+}
 
